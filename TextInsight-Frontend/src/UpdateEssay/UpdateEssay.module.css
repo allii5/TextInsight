@@ -1,0 +1,497 @@
+.formContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  font-family: system-ui, -apple-system, sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.formMain {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.formMain h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: #00796B;
+}
+
+.bottomLine {
+  border-bottom: 3px solid #a5a3a3;
+  margin-bottom: 1rem;
+}
+
+.responsiveForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.formGroup.error input,
+.formGroup.error textarea,
+.formGroup.error .formSelect,
+.formGroup.error .customDateInput {
+  border-color: #dc2626;
+}
+
+.errorMessage {
+  color: #dc2626;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #06aff0;
+}
+
+.formInput,
+.formTextarea,
+.formSelect,
+.customDateInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 2px solid #06aff0;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Updated select styles with scrollbar */
+.formSelect {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2306aff0' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.5rem) center;
+  padding-right: 2rem;
+}
+
+/* Styles for select with size attribute */
+.formSelect[size] {
+  padding-right: 0.5rem;
+  background-image: none;
+  height: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.formSelect option {
+  padding: 8px;
+}
+
+/* Custom scrollbar for select dropdown */
+.formSelect::-webkit-scrollbar {
+  width: 8px;
+}
+
+.formSelect::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.formSelect::-webkit-scrollbar-thumb {
+  background: #06aff0;
+  border-radius: 4px;
+}
+
+/* Firefox scrollbar styles */
+.formSelect {
+  scrollbar-width: thin;
+  scrollbar-color: #06aff0 #f1f1f1;
+}
+
+.formInput:hover,
+.formTextarea:hover,
+.formSelect:hover {
+  border-color: #06aff0;
+}
+
+.formInput:focus,
+.formTextarea:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: #06aff0;
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.1);
+}
+
+.formTextarea {
+  height: 80px;
+  resize: none;
+  line-height: 1.4;
+}
+
+.keywordsTextarea {
+  height: 100px;
+}
+
+.formHelper {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Date Picker Styles */
+.datePickerContainer {
+  position: relative;
+}
+
+.datePickerDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #06aff0;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 4px;
+  padding: 0.5rem;
+}
+
+.datePickerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+  background-color: #f8f9fa;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.datePickerHeader button {
+  border: none;
+  background: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  color: #06aff0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.datePickerHeader button:hover {
+  background-color: #e9ecef;
+  color: #0590c7;
+}
+
+.datePickerHeader span {
+  font-weight: 500;
+  color: #333;
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0.25rem;
+}
+
+.weekDay {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  padding: 0.25rem;
+  font-weight: 500;
+}
+
+.calendarDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.calendarDay {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.calendarDay.active {
+  color: #333;
+}
+
+.calendarDay.active:hover {
+  background-color: #e9ecef;
+}
+
+.calendarDay.selected {
+  background-color: #06aff0;
+  color: white;
+  font-weight: 500;
+}
+
+.calendarDay:not(.active) {
+  color: #ccc;
+  cursor: default;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btnCancel,
+.btnSubmit {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.btnCancel {
+  background-color: #9b9a9a;
+  color: white;
+}
+.btnCancel:focus {
+  outline: none;
+}
+.btnSubmit:focus {
+  outline: none;
+}
+
+.btnSubmit {
+  background-color: #06aff0;
+  color: white;
+}
+
+.btnCancel:hover:not(:disabled) {
+  background-color: #858585;
+}
+
+.btnSubmit:hover:not(:disabled) {
+  background-color: #0590c7;
+}
+
+.btnCancel:disabled,
+.btnSubmit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitError {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fee2e2;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar styles for form */
+.formMain::-webkit-scrollbar,
+.datePickerDropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.formMain::-webkit-scrollbar-track,
+.datePickerDropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.formMain::-webkit-scrollbar-thumb,
+.datePickerDropdown::-webkit-scrollbar-thumb {
+  background: #06aff0;
+  border-radius: 4px;
+}
+
+/* Firefox specific styles */
+@-moz-document url-prefix() {
+  .formSelect {
+    background-image: none;
+    padding-right: 0.5rem;
+  }
+
+  .formSelect::after {
+    content: '▼';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #06aff0;
+    pointer-events: none;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formMain {
+    padding: 1rem;
+    margin: 0.5rem;
+    max-height: 90vh;
+  }
+
+  .formMain h1 {
+    font-size: 1.5rem;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+
+  .btnCancel,
+  .btnSubmit {
+    width: 100%;
+  }
+
+  .datePickerDropdown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 0.5rem;
+  }
+
+  .formMain {
+    padding: 1rem;
+    margin: 0.25rem;
+    border-radius: 10px;
+  }
+
+  .formGroup label {
+    font-size: 0.875rem;
+  }
+
+  .formInput,
+  .formTextarea,
+  .formSelect {
+    font-size: 16px;
+    padding: 0.625rem;
+  }
+
+  .formHelper {
+    font-size: 0.7rem;
+  }
+
+  .calendarDay {
+    font-size: 0.813rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .formContainer {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+
+  .formMain {
+    box-shadow: none;
+    max-height: none;
+    padding: 0;
+  }
+
+  .btnCancel,
+  .btnSubmit {
+    display: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .formInput,
+  .formTextarea,
+  .formSelect {
+    border-width: 2px;
+  }
+
+  .formHelper {
+    color: #444;
+  }
+
+  .errorMessage {
+    color: #9f1239;
+  }
+
+  .calendarDay.selected {
+    outline: 2px solid #000;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .formInput,
+  .formTextarea,
+  .formSelect,
+  .btnCancel,
+  .btnSubmit,
+  .calendarDay {
+    transition: none;
+  }
+}

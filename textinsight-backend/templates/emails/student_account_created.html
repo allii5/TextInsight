@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #03a6ff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            margin-top: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #03a6ff;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #03a6ff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Textinsight</h1>
+        </div>
+        <div class="content">
+            <p>Dear <span class="highlight">Student</span>,</p>
+            <p>Your account on <span class="highlight">Textinsight</span> has been successfully created!</p>
+            <p><strong>Your Account Details:</strong></p>
+            <ul>
+                <li><strong>Username:</strong> <span class="highlight">{{username}}</span></li>
+                <li><strong>Password:</strong> <span class="highlight">{{password}}</span></li>
+            </ul>
+            <p>We encourage you to log in, verify your account, and change your password immediately for security purposes.</p>
+            <a href="http://localhost:3000/login" class="button">Login to Textinsight</a>
+            <p>Thank you for joining us, and we look forward to enhancing your learning journey!</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Textinsight. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

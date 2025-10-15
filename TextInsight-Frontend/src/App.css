@@ -1,0 +1,21 @@
+@font-face {
+
+  font-family: outfit;
+  src: url('./Fonts/Outfit-VariableFont_wght.ttf');
+
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./Fonts/NotoSans-VariableFont_wdth,wght.ttf');
+}
+
+
+#root {
+  /* max-width: 1280px; */
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+

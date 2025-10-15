@@ -1,0 +1,297 @@
+.form-container {
+  background-color: #f7f9f9;
+  display: flex;
+  font-family: Notosans, sans-serif;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center */
+  min-height: 100vh; /* Changed from height */
+  width: 100vw;
+  padding: 20px;
+  overflow-y: auto; /* Added */
+}
+
+.form-main {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px 0; /* Added */
+}
+  .form-main h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #00796B;
+    text-align: center;
+  }
+  
+  .bottom-line {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input1,
+  .input5 {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #06aff0;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #06aff0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #0593d1;
+    
+  }
+  
+  .recommendations-dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .recommendations-dropdown div {
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .recommendations-dropdown div:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #06aff0;
+  }
+  
+  .description {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .dropzone {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dropzone.dragging {
+    border-color: #06aff0;
+    background-color: #f0f9ff;
+  }
+  
+  .dropzone.has-file {
+    border-color: #22c55e;
+    background-color: #f0fdf4;
+  }
+  
+  .dropzone-text {
+    color: #444;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .format-text {
+    color: #999;
+    font-size: 0.8rem;
+  }
+  /* Add these styles to your existing input[type="text"] rules */
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #06aff0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: white; /* Add this */
+    color: #333; /* Add this */
+  }
+  
+  /* Optional: Ensure text remains visible when input is focused */
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #06aff0;
+    background-color: white;
+    color: #333;
+  }
+  .sample-button {
+    background: #06aff0;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sample-button:hover {
+    background: #0593d1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .student-list-container {
+    margin: 1.5rem 0;
+    position: relative;
+  }
+  
+  .student-limit {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .student-list {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0.5rem;
+  }
+  
+  
+  
+  .student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .student-item:last-child {
+    border-bottom: none;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  .delete-btn:focus {
+    outline: none;
+    background: #c82333;
+  }
+  
+  .input4 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .input-btn1,
+  .input-btn2 {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .input-btn1 {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .input-btn2 {
+    background: #06aff0;
+    color: white;
+  }
+  
+  .input-btn1:hover,
+  .input-btn2:hover {
+    opacity: 0.9;
+  }
+
+  .input-btn1:hover{
+    background-color: #4b5563;
+  }
+  .input-btn2:hover {
+    background-color: #0284c7;
+  }
+  .input-btn1:focus,
+  .input-btn2:focus {
+    outline: none;
+    opacity: 0.9;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .form-main {
+      padding: 1.5rem;
+    }
+    
+    .input4 {
+      flex-direction: column;
+    }
+    
+    .input-btn1,
+    .input-btn2 {
+      width: 100%;
+    }
+    
+    .student-limit {
+      top: -1.2rem;
+    }
+  }

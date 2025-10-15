@@ -1,0 +1,51 @@
+.sidebar {
+    background-color: #03a6ff;
+    width: 255px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 10;
+  }
+  
+  .logo {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align: left;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: NotoSans;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu a.active {
+    font-size: 22px;
+    
+    
+  }
+  
+  .menu a:hover {
+    color: white; 
+  }
+  

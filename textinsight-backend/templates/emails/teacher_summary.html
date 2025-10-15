@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #03a6ff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            margin-top: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #03a6ff;
+        }
+        .list {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Account Creation Summary</h1>
+        </div>
+        <div class="content">
+            <p>Dear <span class="highlight">Teacher</span>,</p>
+            <p>The bulk account creation process on <span class="highlight">Textinsight</span> has been completed successfully. Below is the summary:</p>
+            <ul class="list">
+                <li><strong>Accounts Created:</strong> <span class="highlight">{{created_accounts}}</span></li>
+                <li><strong>Duplicate Emails:</strong> <span class="highlight">{{existing_emails}}</span></li>
+                <li><strong>Unused Emails:</strong> <span class="highlight">{{unused_emails}}</span></li>
+            </ul>
+            <p>Please review the details and let us know if you need any further assistance.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Textinsight. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

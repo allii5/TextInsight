@@ -1,0 +1,130 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45); /* Lighter dark overlay */
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .titleContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .titleWord {
+    position: absolute;
+    color: #06aff0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    opacity: 0.3; /* Increased opacity */
+    animation: float 8s infinite linear;
+    user-select: none;
+    white-space: nowrap;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0) translateX(0); }
+    25% { transform: translateY(-30px) translateX(15px); }
+    50% { transform: translateY(0) translateX(30px); }
+    75% { transform: translateY(30px) translateX(15px); }
+    100% { transform: translateY(0) translateX(0); }
+  }
+  
+  .modalContent {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.98); /* Brighter modal background */
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Rest of the CSS remains same as previous version */
+  
+  .circleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .circleProgress {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .innerCircle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .percentage {
+    color: #00796B;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .closeButton {
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    background: #06aff0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: popIn 0.5s ease;
+  }
+  
+  .closeButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(6, 175, 240, 0.4);
+  }
+  
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

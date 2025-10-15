@@ -1,0 +1,1004 @@
+.login-container {
+  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-family:outfit;
+    margin:300px ;
+   
+   
+}
+
+ /* .subtitle {
+  color: #89c6ff;
+  font-size:35px;
+  margin-top: 5px;
+  font-family:NotoSans;
+  margin-right:110px;
+  
+  display: inline-block;
+  margin-left: 0;
+}  */
+
+
+
+.title {
+
+    color: #27a9ff;
+    font-size: 70px;
+    margin: 0;
+    margin-right:220px;
+
+}
+
+.form-title {
+
+  color: #27a9ff;
+  font-size: 70px;
+  margin: 0;
+  margin-right:220px;
+
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(187, 183, 183);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;  
+    cursor: text;
+    transition: border-color 0.3s ease; 
+   
+}
+
+
+
+.submit-button {
+
+    width: 358px;
+    padding: 12px;
+    background-color: #27a9ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0px;
+  
+    
+}
+.Login-form{
+
+    
+    
+    width: 50%;
+    padding: 20px; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+}
+
+
+.submit-button:hover {
+    background-color: #1e8cd9;
+  }
+  
+  
+  .forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #27a9ff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #27a9ff;
+  }
+  
+
+  .signup-text {
+    margin-top: 20px;
+    text-align: center;
+   
+    font-size: 14px;
+    color:rgb(170, 165, 165);
+
+  }
+  
+  .signup-text a {
+    color: #27a9ff;
+    text-decoration: none;
+    
+  }
+  
+  .signup-text a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #27a9ff;
+  }
+
+  .input-field::placeholder {
+    color: rgb(150, 150, 150);
+    opacity: 1;
+}
+
+.input-field:hover {
+    border: 1px solid #27a9ff;
+}
+
+.input-field:focus {
+    outline: none; 
+    border: 1px solid #27a9ff; 
+    background-color: white; 
+    color: black;
+}
+
+.submit-button:focus {
+  outline: none; 
+}
+
+.icon-image {
+  position: relative;
+  left: 43%;
+  top: -49px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;  
+  transition: opacity 0.3s ease;  
+}
+
+.icon-image:hover {
+  opacity: 1;
+}
+
+
+.password-container{
+
+  margin-bottom: -20px;
+}
+
+.subtitle-container{
+
+  display: inline-block;
+  margin-right: 110px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.subtitle-first-line{
+
+  color: #89c6ff;
+  font-size:35px;
+  font-family:NotoSans;
+  width:100%;
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(30), cursor .4s step-end infinite alternate;
+  
+}
+
+.subtitle-second-line {
+    color: #89c6ff;
+    font-size: 35px;
+    font-family: NotoSans;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    direction: ltr;
+    animation: typing 2s steps(30) 2s backwards, cursor .4s step-end infinite alternate;
+   
+    
+}
+
+@keyframes typing {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@media (min-width: 996px) and (max-width:1200px) {
+    .login-container {
+        flex-direction: row; /* Stack items vertically */
+        text-align: center;
+        margin:130px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 55px; /* Adjust title size */
+        margin-left: 100px;
+        text-align: left;
+    }
+  
+    .subtitle-container {
+        margin: 0 60px; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+
+@media (min-width: 768px) and (max-width:1202px) {
+    .login-container {
+        flex-direction: row; /* Stack items vertically */
+        text-align: center;
+        margin:130px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 55px; /* Adjust title size */
+        margin-left: 100px;
+        text-align: left;
+    }
+  
+    .subtitle-container {
+        margin: 0 60px; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+
+
+@media (min-width: 1402px) and (max-width:1602px) {
+    .login-container {
+        flex-direction: row; /* Stack items vertically */
+        text-align: center;
+        margin:130px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 55px; /* Adjust title size */
+        margin-left: 100px;
+        text-align: left;
+    }
+  
+    .subtitle-container {
+        margin: 0 60px; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+
+
+@media (min-width: 1602px) and (max-width:1702px) {
+    .login-container {
+        flex-direction: row; /* Stack items vertically */
+        text-align: center;
+        margin:130px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 55px; /* Adjust title size */
+        margin-left: 100px;
+        text-align: left;
+    }
+  
+    .subtitle-container {
+        margin: 0 60px; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+@media (min-width: 768px) and (max-width:1402px) {
+    .login-container {
+        flex-direction: row; /* Stack items vertically */
+        text-align: center;
+        margin:130px 20px;
+         /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 60px; /* Adjust title size */
+        margin-left: 60px;
+        text-align: left;
+    }
+  
+    .subtitle-container {
+        margin: 0 60px; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 35px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+@media (min-width: 768px) and (max-width:996px) {
+    .login-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        margin: 30px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 50px; /* Adjust title size */
+        margin-right: 0;
+    }
+  
+    .subtitle-container {
+        margin: 0 auto; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+
+
+
+@media (max-width: 992px) {
+    .login-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        margin: 30px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 50px; /* Adjust title size */
+        margin-right: 0;
+    }
+  
+    .subtitle-container {
+        margin: 0 auto; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        margin: 30px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 50px; /* Adjust title size */
+        margin-right: 0;
+    }
+  
+    .subtitle-container {
+        margin: 0 auto; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+  
+@media (max-width: 568px) {
+    .login-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        margin: 80px 20px; /* Adjust margin for better centering */
+    }
+  
+    .text-section {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 25px; /* Spacing between text and form */
+    }
+  
+
+      
+    .Login-form {
+        width: 100%; /* Full width */
+        max-width: 350px; /* Adjust max-width */
+        padding: 30px; /* Adjust padding */
+    }
+  
+    .input-field {
+        font-size: 15px; /* Slightly larger text */
+        padding: 11px; /* Adjust padding */
+    }
+  
+    .submit-button {
+        width: 100%; /* Full width */
+        padding: 11px; /* Adjust padding */
+        font-size: 15px; /* Adjust font size */
+    }
+  
+    .icon-image {
+        left: 43%; /* Align icon properly */
+        top: -46px;
+        width: 22px; /* Adjust icon size */
+        height: 22px;
+    }
+  
+    .forgot-password {
+        font-size: 15px; /* Adjust font size */
+        margin-top: 12px; /* Adjust spacing */
+    }
+  
+    .signup-text {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 12px;
+    }
+  
+    .title,
+    .form-title {
+        font-size: 50px; /* Adjust title size */
+        margin-right: 0;
+    }
+  
+    .subtitle-container {
+        margin: 0 auto; /* Center subtitles */
+        margin-top: -12px;
+    }
+  
+    .subtitle-first-line,
+    .subtitle-second-line {
+        font-size: 30px; /* Adjust subtitle size */
+    }
+  
+    .password-container {
+        margin-bottom: -15px;
+    }
+  }
+  
+
+@media (max-width: 480px) {
+  .login-container {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      margin: 80px 20px; /* Adjust margin for better centering */
+  }
+
+  .text-section {
+      width: 100%; /* Full width */
+      margin-right: 0;
+      margin-bottom: 25px; /* Spacing between text and form */
+  }
+
+  .Login-form {
+      width: 100%; /* Full width */
+      max-width: 350px; /* Adjust max-width */
+      padding: 18px; /* Adjust padding */
+  }
+
+  .input-field {
+      font-size: 15px; /* Slightly larger text */
+      padding: 11px; /* Adjust padding */
+  }
+
+  .submit-button {
+      width: 100%; /* Full width */
+      padding: 11px; /* Adjust padding */
+      font-size: 15px; /* Adjust font size */
+  }
+
+  .icon-image {
+      left: 43%; /* Align icon properly */
+      top: -46px;
+      width: 22px; /* Adjust icon size */
+      height: 22px;
+  }
+
+  .forgot-password {
+      font-size: 13px; /* Adjust font size */
+      margin-top: 12px; /* Adjust spacing */
+  }
+
+  .signup-text {
+      font-size: 13px; /* Adjust font size */
+      margin-top: 12px;
+  }
+
+  .title,
+  .form-title {
+      font-size: 50px; /* Adjust title size */
+      margin-right: 0;
+  }
+
+  .subtitle-container {
+      margin: 0 auto; /* Center subtitles */
+      margin-top: -12px;
+  }
+
+  .subtitle-first-line,
+  .subtitle-second-line {
+      font-size: 25px; /* Adjust subtitle size */
+  }
+
+  .password-container {
+      margin-bottom: -15px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  /* Adjust the container */
+  .login-container {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      margin: 50px 10px; /* Reduce margin for small screens */
+  }
+
+  /* Text section adjustments */
+  .text-section {
+      width: 100%; /* Take full width */
+      margin-right: 0;
+      margin-bottom: 20px; /* Add spacing for stacked layout */
+  }
+
+  /* Adjust the form container */
+  .Login-form {
+      width: 100%; /* Full width of the screen */
+      max-width: 300px; /* Reduce max-width */
+      padding: 15px; /* Reduce padding */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+  /* Input fields adjustment */
+  .input-field {
+      font-size: 14px; /* Smaller font for smaller screen */
+      padding: 10px; /* Reduce padding */
+  }
+
+  /* Submit button adjustment */
+  .submit-button {
+      width: 100%; /* Full width */
+      padding: 10px; /* Reduce padding */
+      font-size: 14px; /* Reduce font size */
+  }
+
+  /* Icon position adjustment */
+  .icon-image {
+      left: 43%; /* Adjust relative position to align icon */
+      top: -43px;
+      width: 20px; /* Scale down icon */
+      height: 20px;
+  }
+
+  /* Forgot password link adjustment */
+  .forgot-password {
+      font-size: 12px; /* Smaller text */
+      margin-top: 10px; /* Adjust spacing */
+  }
+
+  /* Signup text adjustments */
+  .signup-text {
+      font-size: 12px; /* Smaller font size */
+      margin-top: 10px;
+  }
+
+  /* Title and subtitle adjustments */
+  .title,
+  .form-title {
+      font-size: 40px; /* Reduce title size for smaller screens */
+      margin-right: 0;
+  }
+
+  .subtitle-container {
+      margin: 0 auto; /* Center the subtitles */
+      margin-top: -10px;
+  }
+
+  .subtitle-first-line,
+  .subtitle-second-line {
+      font-size: 20px; /* Reduce subtitle size */
+  }
+
+  /* Password container adjustment */
+  .password-container {
+      margin-bottom: -10px;
+  }
+}

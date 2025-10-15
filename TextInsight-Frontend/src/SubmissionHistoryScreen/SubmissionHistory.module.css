@@ -1,0 +1,1691 @@
+.submission-history {
+    font-family: Notosans;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-title {
+    width: calc(100% - 280px);
+    left: 270px;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 16%;
+    top: 70px;
+    color: white;
+    background-color: #03a6ff;
+    border-radius: 8px;
+    text-align: left;
+    position: fixed;
+}
+
+.page-title h2 {
+    margin: 0;
+    font-size: 25px;
+    display: block;
+    margin-right: 12px;
+    text-align: left;
+}
+
+.page-title p {
+    color: white;
+    margin: 0;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+}
+
+.essay-title {
+    font-family: Notosans;
+    background-color: rgba(3, 172, 255, 0.7);
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 16px 24px;
+    width: 85%;
+    position: fixed;
+    top: 220px;
+    left: 270px;
+    right: 24px;
+    z-index: 1;
+    margin-left: 4px;
+    margin-right: 3px;
+}
+
+/* Rest of the CSS remains the same */
+.essay-title .column:first-child {
+    text-align: left;
+    padding-left: 0;
+}
+
+.essay-title .column {
+    text-align: center;
+}
+
+.essays-container {
+    position: fixed;
+    top: 320px;
+    left: 270px;
+    right: 24px;
+    bottom: 24px;
+    width: 85%;
+    overflow-y: auto;
+    padding-right: 4px;
+    padding-left: 2px;
+}
+
+
+
+.essays-container::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+.essays-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.essays-container::-webkit-scrollbar-thumb {
+    background: #03a6ff;
+    border-radius: 4px;
+}
+
+.essays-container::-webkit-scrollbar-thumb:hover {
+    background: #0295e8;
+}
+
+.essay-wrapper {
+    margin-bottom: 16px;
+}
+
+.essay-details {
+    font-family: Notosans;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+    color: #03a6ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 16px 24px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 4px;
+    margin-right: 3px;
+}
+
+.essay-details .column:first-child {
+    text-align: left;
+    padding-left: 0;
+}
+
+.essay-details .column {
+    text-align: center;
+}
+
+.essay-details .column:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.class-code,
+.date {
+    color: #7d7d7d;
+}
+
+.view-btn {
+    background-color: #03a6ff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.view-btn.hide-btn {
+    background-color: rgba(3, 172, 255, 0.7);
+}
+
+.view-btn:focus {
+    outline: none;
+    border: none;
+}
+
+.view-btn:hover {
+    background-color: #0295e8;
+}
+
+.details-container {
+    background-color: white;
+    border-radius: 8px;
+    margin: 8px 4px 0 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.details {
+    padding: 15px 24px;
+    text-align: left;
+}
+
+.details h3 {
+    font-size: 28px;
+    color: #096309;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.detail-row {
+    margin-bottom: 12px;
+    font-size: 18px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.detail-label {
+    color: #666666;
+    font-weight: 500;
+    width: fit-content;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.detail-value {
+    color: #03a6ff;
+    text-align: left;
+    margin-left: 4px;
+}
+
+.submit-btn {
+    background-color: #03a6ff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 20px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn:hover {
+    background-color: #0295e8;
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+
+@media (min-width: 996px) and (max-width: 1200px) {
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1202px) {
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (min-width: 1402px) and (max-width: 1602px) {
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (min-width: 1602px) and (max-width: 1702px) {
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 21px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1402px) {
+
+
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 12.5%;
+        top: 65px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+        gap: 0px;
+        
+    }
+
+
+    .page-title h2 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+    .essays-container::-webkit-scrollbar {
+        width: 6px;
+        
+    
+    }
+    
+    .essays-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+    
+    .essays-container::-webkit-scrollbar-thumb {
+        background: #03a6ff;
+        border-radius: 4px;
+    }
+    
+    .essays-container::-webkit-scrollbar-thumb:hover {
+        background: #0295e8;
+    }
+    
+    
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 996px) {
+
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+   
+    .page-title {
+        width: calc(100% - 275px);
+        left: 265px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 11.5%;
+        top: 70px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 274px);
+        left: 260px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 260px);
+        left: 256px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+
+  
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 16px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 28px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 15px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 40%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-title {
+        width: calc(100% - 220px);
+        left: 212px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 13%;
+        top: 60px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 218px);
+        left: 208px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 198px);
+        left: 205px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+   
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 14px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 22px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 13px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 50%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 13px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 50px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .page-title {
+        width: calc(100% - 170px);
+        left: 162px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 15%;
+        top: 50px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 170px);
+        left: 158px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 149px);
+        left: 155px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 12px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 22px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 13px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 50%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 10px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 40px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .page-title {
+        width: calc(100% - 170px);
+        left: 162px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 15%;
+        top: 50px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 170px);
+        left: 158px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 148px);
+        left: 155px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+
+   
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 14px;
+        padding: 12px;
+        width:100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 10px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 22px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 13px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 50%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 8px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 30px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .page-title {
+        width: calc(100% - 145px);
+        left: 140px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 15%;
+        top: 50px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+        position: fixed;
+    }
+
+    
+
+    .essay-title {
+        width: calc(100% - 145px);
+        left: 136px;
+        right: 10px;
+        padding: 8px;
+        top: 150px;
+        background-color: #03a6ff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .essays-container {
+        width: calc(100% - 125px);
+        left: 132px;
+        right: 10px;
+        top: 190px;
+        bottom: 10px;
+        padding: 8px;
+    }
+
+    .page-title h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .page-title p {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+
+    .essay-details {
+        grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+        /* Increase width to move it right */
+        margin: auto;
+        /* Center it properly */
+    }
+
+    .column {
+        font-size: 8px;
+        /* Reduce text size */
+
+    }
+
+    .details-container {
+        margin-left: 0%;
+        /* Align container with parent */
+        padding: 8px;
+        text-align: left;
+        /* Ensure all text is left-aligned */
+        width: 100%;
+        /* Full width of the parent */
+
+    }
+
+    .details h3 {
+        padding-left: 0px;
+        font-size: 20px;
+        margin-bottom: 8px;
+        /* Add spacing below heading */
+        text-align: left;
+        /* Align heading to the left */
+    }
+
+    .detail-row {
+        font-size: 11px;
+        line-height: 1.5;
+        /* Better spacing for readability */
+        margin-bottom: 4px;
+        /* Add space between rows */
+        text-align: left;
+        /* Align text to the left */
+        padding-left: 0px;
+        /* Slight indentation for alignment consistency */
+    }
+
+    .submit-btn {
+        width: 50%;
+        /* Button spans container width */
+        margin-top: 16px;
+        /* Space above the button */
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .view-btn {
+        font-size: 8px;
+        /* Reduce button text size */
+        padding: 2px 6px;
+        /* Reduce padding */
+        width: 30px;
+        /* Reduce width */
+        height: 28px;
+        /* Adjust height */
+    }
+    .msg {
+        /* Ensures it is positioned relative to the viewport */
+       
+       transform: translate(0%, 200%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: rgb(0, 0, 0);
+       text-align: center; /* Center text inside the container */
+       font-size: 15px;
+    }
+}
